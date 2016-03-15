@@ -1,0 +1,9 @@
+oss verison:2.0.5
+oss_build:2016年2月23日
+author:gaozhichang
+
+demo:
+		$oss = Yii::app()->oss;
+    	// 获取Bucket列表
+		$bucketListInfo = $oss->listBuckets();
+		$bucketListInfo = $oss->getClient()->listBuckets();
